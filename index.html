@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Invoice</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="shortcut icon"
+      href="./ABELOV INTERNATIONAL LTD.jpg"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <!-- invoice container -->
+    <div class="invoice-container">
+      <!-- header -->
+      <div class="header">
+        <img
+          class="logo"
+          src="./ABELOV INTERNATIONAL LTD.jpg"
+          alt="Company Logo"
+        />
+        <h2>E-Invoice</h2>
+      </div>
+
+      <!-- bill -->
+      <div class="bill">
+        <div class="from">
+          <h3>Bill From:</h3>
+          <p>
+            Abelov International Ltd<br />
+            Address: City Emirate Plaza <br />
+            Block A4 &amp; A6 Opposite Area Command Abuja Phase 1 <br />
+            Jalingo,Taraba State<br />
+            Phone: 08101726816<br />
+            Email: abelovinternationalltd@gmail.com
+          </p>
+        </div>
+        <div class="to">
+          <h3>Bill To:</h3>
+          <p>
+            Name: <input type="text" /><br /><br />
+            Address: <input type="text" /><br /><br />
+            Phone: <input type="tel" /> <br /><br />
+            Date: <input type="datetime-local" />
+          </p>
+        </div>
+      </div>
+
+      <!-- services -->
+      <div class="service-details">
+        <h3>Description of Services:</h3>
+        <div class="table">
+          <div class="discription">
+            <p>
+              <span>Description</span> <br />
+              <input type="text" placeholder="Description" /> <br />
+              <input type="text" placeholder="Description" /> <br />
+              <input type="text" placeholder="Description" /> <br />
+            </p>
+          </div>
+          <div class="amount">
+            <p>
+              <span>Amount</span> <br />
+              <input type="text" placeholder="amount" /> <br />
+              <input type="text" placeholder="amount" /> <br />
+              <input type="text" placeholder="amount" /> <br />
+            </p>
+          </div>
+          <div class="quantity">
+            <p>
+              <span>Quantity</span> <br />
+              <input type="text" placeholder="quantity" /> <br />
+              <input type="text" placeholder="quantity" /> <br />
+              <input type="text" placeholder="quantity" /> <br />
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="information">
+        <h3>Additional Information</h3>
+        <textarea name="info" id="info" cols="70" rows="5" placeholder="Additional-info"></textarea>
+      </div>
+
+      <!-- total -->
+      <div class="total-details">
+        <h3>Total Amount:</h3>
+        <p>₦ <input type="tel" /></p>
+      </div>
+
+      <!-- payment -->
+      <div class="payment-details">
+        <h3>Payment Details:</h3>
+        <p>Payment Method:<input type="text" /></p>
+      </div>
+
+      <!-- footer -->
+      <div class="print-button">
+        <button onclick="print()">Print Invoice</button>
+      </div>
+    </div>
+  </body>
+</html>

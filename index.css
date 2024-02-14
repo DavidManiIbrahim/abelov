@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+  }
+
+  .invoice-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .logo {
+    max-width: 20%;
+    height: auto;
+  }
+.bill{
+display: flex;
+}
+.from{
+
+  width: 50%;
+}
+.to{
+
+  width: 50%;
+
+}
+  .bill-details,
+  .service-details,
+  .total-details,
+  .payment-details {
+    margin-top: 20px;
+  }
+p{
+  margin-left: 5%;
+}
+.span{
+  position: relative;
+  left: 5%;
+}
+.table{
+display: flex;
+}
+  .print-button {
+    text-align: center;
+    margin-top: 20px;
+  }
+  @media print {
+input,textarea {
+  border: none;
+}
+button{
+  display: none;
+}
+}
+@media screen and (orientation:portrait) {
+.bill{
+  display: inline-block;
+}
+.table{
+  display: inline;
+  }
+textarea{
+  width: 100%;
+}
+}
